@@ -1,0 +1,153 @@
+/*
+  Name: George Huang
+  Date: April 22, 2020
+  Section: CSE 154 AD | TA: Dylan McKone
+
+  This CSS file contains styling for index.html
+*/
+
+body {
+  /*
+    This image was found at
+    https://confessionsofafitfoodie.com/wp-content/uploads/2018/02/Instant-Pot-Ramen-Noodles-.jpg
+  */
+  background-image: url("noodles.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Comic Neue', cursive;
+  font-size: 16px;
+}
+
+body > header, #intro, #intro > header > section, #ingredients, #footer {
+  width: 100%;
+}
+
+body > header, main, #about-content > p {
+  margin: auto;
+}
+
+body > header, #context, #about {
+  margin-bottom: 5em;
+}
+
+body > header, main h1, #about-content > p, #more-info h3, footer p {
+  text-align: center;
+}
+
+body > header, footer p {
+  font-size: 0.9em;
+}
+
+body > header, footer {
+  background-color: red;
+}
+
+body > header {
+  height: 1em;
+}
+
+header > p {
+  margin: 0px;
+}
+
+main, #about-content, #about-content > p, #more-info {
+  width: 90%;
+}
+
+main, #intro > header, #intro > header > section, #context, #context-content, #context-content figure,
+#about, #about-content, #ingredients, .ingredient {
+  display: flex;
+}
+
+main, #context, #context-content figure, #about, #about-content {
+  flex-direction: column;
+}
+
+main, #intro > header, #intro > header > section, #context, #context-content,
+#context-content figure, #about, #about-content, .ingredient {
+  align-items: center;
+}
+
+#intro > header, #intro > header > section, #context-content, #context-content figure,
+#about, #about-content, .ingredient {
+  justify-content: center;
+}
+
+#intro > header > section, #context {
+  background: palegoldenrod;
+}
+
+#intro > header > section, #context, #about {
+  opacity: 90%;
+}
+
+#intro > header {
+  height: 100em;
+}
+
+#intro > header > section {
+  height: 10em;
+}
+
+main h1, #context h2, #about h2, #about-content > p:nth-child(3) {
+  text-decoration: underline;
+}
+
+main h1 {
+  font-size: 5em;
+}
+
+#context-content, #about-content > p {
+  margin-bottom: 20px;
+}
+
+#context h2 {
+  font-size: 2em;
+}
+
+#context-content p, #context-content figure {
+  width: 40%;
+}
+
+#context-content figure img {
+  width: 50%;
+}
+
+#about {
+  background-color: palegoldenrod;
+}
+
+#about h2 {
+  font-size: 2em;
+}
+
+#about-content > p {
+  margin-top: 20px;
+}
+
+#ingredients {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.ingredient {
+  margin: 15px;
+  height: 3em;
+  width: 7em;
+  background-color: #9B580D;
+  opacity: 80%;
+  flex-shrink: 0;
+}
+
+.ingredient p {
+  font-size: 1.5em;
+}
+
+.ingredient:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  background-color: red;
+}
